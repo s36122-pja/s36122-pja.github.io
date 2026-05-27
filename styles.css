@@ -1,7 +1,8 @@
-@import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&family=VT323&display=swap');
 
 body {
-    font-family: 'Nunito';
+    font-family: 'Press Start 2P';
     color: #6c393c;
     margin: 0;
     padding: 0;
@@ -43,14 +44,16 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 28%;
+    text-align: center;
 }
 .posty {
     display: grid;
     grid-template-columns: auto auto;
-    
     flex: 1;
     margin: 2%;
     column-gap: 50px;
+    position: relative;
+    z-index: 1;
 }
 .podposty {
     display: grid;
@@ -69,22 +72,27 @@ body {
     border-radius: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     width: 70%;
     height: 40%;
     align-items: center;
     justify-content: center;
     font-weight: 600;
     font-size: 220%;
+    position: relative;
+    z-index: 1;
+    line-height: 1.8;
 }
 .bombelki {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
 }
 .bombelki li{
     position: absolute;
@@ -92,13 +100,13 @@ body {
     width: 40px;
     height: 40px;
     background-color: white;
-    bottom: -180px;
-    animation: float 6.5s infinite linear;
+    bottom: 20px;
+    animation: float 6s infinite linear;
 }
 .bombelki li:nth-child(1){
     width: 80px;
     height: 80px;
-    left: 10%%;
+    left: 8%;
     animation-delay: 1.5s;
 }
 .bombelki li:nth-child(2){
@@ -152,8 +160,8 @@ body {
 .bombelki li:nth-child(10){
     width: 25px;
     height: 25px;
-    left: 10%;
-    animation-delay: 0.9s;
+    left: 5%;
+    animation-delay: 0.5s;
 }
 
 @keyframes float {
@@ -164,7 +172,7 @@ body {
     }
     to{
         transform: translateY(-1000px);
-        opacity: 0;
+        opacity: 1;
         border-radius: 100%;
     }
 }
