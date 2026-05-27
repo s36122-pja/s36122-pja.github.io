@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-color: #d6feff
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    grid-template-rows: 15% 1fr 5% 12%;
+}
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+.naglowek {
+    background-color: #fa969b;
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid #8c4c4f ;
+}
+.krewetka {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid #8c4c4f ;
+}
+.stopa {
+    background-color: #fa969b;
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid #8c4c4f ;
+}
+.glowne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20%;
+}
+.posty {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    flex: 1;
+    margin: 2%;
+    column-gap: 50px;
+}
+.podposty {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.stylpost {
+    background-color: white;
+    border: 5px solid #8c4c4f;
+    border-radius: 10px;
+}
