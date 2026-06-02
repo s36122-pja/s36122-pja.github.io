@@ -14,7 +14,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     min-height: 100vh;
-    grid-template-rows: 12% 1fr 70px 11%;
+    grid-template-rows: 15% 1fr 5% 11%;
+    grid-template-rows: 15% 1fr 70px 11%;
 }
 .griditem {
     display: flex;
@@ -25,7 +26,7 @@ body {
 }
 .logo {
     display: block;    
-    height: 100px;
+    height: 115px;
     width: auto;
     padding-left: 30px;
     transition: transform 0.3s ease-in-out;
@@ -63,6 +64,8 @@ body {
     background-color: #fa969b;
     width: 100%;
     height: 100%;
+    border-bottom: 5px solid #8c4c4f ;
+    overflow: hidden;
     border-bottom: 5px solid #8c4c4f;
 }
 .krewetka {
@@ -73,6 +76,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    border-top: 5px solid #8c4c4f ;
     border-top: 5px solid #8c4c4f;
     position: relative;
     overflow: hidden;
@@ -147,30 +151,15 @@ body {
     position: relative;
     z-index: 1;
 }
-.stylpostmapa {
-    position: relative;
-    padding: 0;
-    overflow: hidden;
-    border: 5px solid #8c4c4f;
-    border-radius: 10px;
-}
-.tlokrewetka {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
 .podposty {
     display: grid;
-    grid-template-rows: 25% 50%;
-    row-gap: 40px;
+    grid-template-rows: auto auto;
 }
 .stylpost {
     background-color: white;
     border: 5px solid #8c4c4f;
     border-radius: 10px;
     padding: 20px;
-    height: 70%;
 }
 .stylglowne {
     display: flex;
@@ -204,7 +193,7 @@ body {
 .bombelki li{
     position: absolute;
     list-style: none;
-    width: 40px;
+     width: 40px;
     height: 40px;
     background-color: white;
     bottom: 20px;
