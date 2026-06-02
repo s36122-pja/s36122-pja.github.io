@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&family=VT323&display=swap');
-
 body {
     font-family: 'Press Start 2P';
     color: #6c393c;
     margin: 0;
     padding: 0;
-    background-color: #d6feff
+    background-color: #d6feff;
+    cursor: url('ikony/default.svg') 16 16, auto;
+    min-height: 100vh;
+    width: 100%;
 }
-.grid-container {
+.gridcontainer {
     display: grid;
     grid-template-columns: 1fr;
     min-height: 100vh;
-    grid-template-rows: 15% 1fr 5% 12%;
+    grid-template-rows: 15% 1fr 5% 11%;
 }
-.grid-item {
+.griditem {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -25,11 +27,34 @@ body {
     display: block;    
     height: 100px;
     width: auto;
-    padding-left: 20px;
+    padding-left: 30px;
     transition: transform 0.3s ease-in-out;
 }
 .logo:hover {
-    transform: scale(1.2)
+    transform: scale(1.1);
+    cursor: url('ikony/pointer.svg') 16 16, auto;
+}
+.nawigacja {
+    display: flex;
+    margin-left: auto;
+    padding-right: 40px;
+    gap: 20px;
+}
+.stylnawigacja {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: #6c393c;
+    border: 4px solid #8c4c4f;
+    border-radius: 8px;
+    padding: 25px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.stylnawigacja:hover {
+    transform: translateY(-10px);
+    cursor: url('ikony/pointer.svg') 16 16, auto;
 }
 .naglowek {
     display: flex;
@@ -48,10 +73,28 @@ body {
     border-top: 5px solid #8c4c4f ;
 }
 .stopa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     background-color: #fa969b;
     width: 100%;
     height: 100%;
-    border-top: 5px solid #8c4c4f ;
+    font-size: 13px;
+    border-top: 5px solid #8c4c4f;
+    box-sizing: border-box;
+    padding: 0 40px;
+    position: relative;
+    z-index: 10;
+}
+.linkstopka {
+    color: #6c393c;
+    text-decoration: underline;
+    transition: color 0.2s ease-in-out;
+}
+.linkstopka:hover {
+    color: white;
+    cursor: url('ikony/pointer.svg') 8 16, auto;
 }
 .glowne {
     display: flex;
