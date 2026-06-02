@@ -21,11 +21,25 @@ body {
     width: 100%;
     height: 100%;
 }
+.logo {
+    display: block;    
+    height: 100px;
+    width: auto;
+    padding-left: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.logo:hover {
+    transform: scale(1.2)
+}
 .naglowek {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     background-color: #fa969b;
     width: 100%;
     height: 100%;
     border-bottom: 5px solid #8c4c4f ;
+    overflow: hidden;
 }
 .krewetka {
     background-color: white;
@@ -101,7 +115,7 @@ body {
     height: 40px;
     background-color: white;
     bottom: 20px;
-    animation: float 6s infinite linear;
+    animation: float 4s infinite linear;
 }
 .bombelki li:nth-child(1){
     width: 80px;
