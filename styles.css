@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     min-height: 100vh;
-    grid-template-rows: 15% 1fr 70px 11%;
+    grid-template-rows: 12% 1fr 70px 11%;
 }
 .griditem {
     display: flex;
@@ -147,15 +147,30 @@ body {
     position: relative;
     z-index: 1;
 }
+.stylpostmapa {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    border: 5px solid #8c4c4f;
+    border-radius: 10px;
+}
+.tlokrewetka {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 .podposty {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 25% 50%;
+    row-gap: 40px;
 }
 .stylpost {
     background-color: white;
     border: 5px solid #8c4c4f;
     border-radius: 10px;
     padding: 20px;
+    height: 70%;
 }
 .stylglowne {
     display: flex;
