@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&family=VT323&display=swap');
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
 body {
     font-family: 'Press Start 2P';
     color: #6c393c;
@@ -26,13 +30,13 @@ body {
 }
 .logo {
     display: block;    
-    height: 165px;
+    height: 12vh;
     width: auto;
     padding-left: 30px;
     transition: transform 0.3s ease-in-out;
 }
 .logo:hover {
-    transform: scale(1.1);
+    transform: scale(1.07);
     cursor: url('ikony/pointer.svg') 16 16, auto;
 }
 .nawigacja {
@@ -55,6 +59,7 @@ body {
 }
 .stylnawigacja:hover {
     transform: translateY(-10px);
+    box-shadow: 0 5px 0px #8c4c4f;
     cursor: url('ikony/pointer.svg') 16 16, auto;
 }
 .naglowek {
@@ -84,8 +89,8 @@ body {
 .krewetkasvg {
     display: block;
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 4vh;
+    height: 4vh;
     max-width: 100%;
     max-height: 100%;
     animation:
@@ -162,9 +167,10 @@ body {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .trescpost {
-    margin: 0;
+    margin-top: 10px;
     padding: 20px;
-    font-size: 12px;
+    font-family: "VT323";
+    font-size: 24px;
     line-height: 1.6;
 }
 .naglowekpost {
@@ -172,7 +178,7 @@ body {
     background-color: #ffc2c5;
     color: #6c393c;
     padding: 15px 20px;
-    font-size: 20px;
+    font-size: 30px;
     border-bottom: 5px solid #8c4c4f;
     width: 100%;
     box-sizing: border-box;
@@ -212,6 +218,7 @@ body {
     position: relative;
     z-index: 1;
     line-height: 1.8;
+    overflow: hidden;
 }
 .bombelki {
     position: fixed;
