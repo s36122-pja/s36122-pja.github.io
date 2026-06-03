@@ -165,11 +165,11 @@ body {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .trescpost {
-    margin-top: 30px;
-    padding: 20px;
+    margin-top: 2%;
+    padding: 2%;
     font-family: "VT323";
     font-size: 210%;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 .naglowekpost {
     margin: 0;
@@ -181,15 +181,75 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
+.naglowekpodpost {
+    margin: 0;
+    background-color: #ffc2c5;
+    color: #6c393c;
+    padding: 2% 4%;
+    font-size: 140%;
+    border-bottom: 5px solid #8c4c4f;
+    width: 100%;
+    box-sizing: border-box;
+}
+.postgrafika {
+    padding: 0px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transform: none !important;
+    box-shadow: none !important;
+    cursor: url('ikony/default.svg') 16 16, auto !important;
+}
+.box_grafikakrewetka {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+.grafikakrewetka {
+    width: 65%;
+    min-width: 200px;
+    max-width: 450px;
+    display: block;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+.linkkrewetka {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+.linkkrewetka:hover {
+    transform: scale(1.05);
+    cursor: url('ikony/pointer.svg') 16 16, auto;
+}
 .glownypost:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 0px #8c4c4f;
     cursor: url('ikony/pointer.svg') 16 16, auto;
 }
+.tekstpodpost {
+    font-family: "VT323";
+    font-size: 180%;
+    padding: 1.5% 3%;
+    line-height: 1.5;
+    margin: 0;
+}
 .podposty {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 50% auto;
     row-gap: 20px;
+}
+.posttest {
+    padding: 0px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
 }
 .stylpost {
     background-color: white;
