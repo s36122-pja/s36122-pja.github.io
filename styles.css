@@ -186,14 +186,6 @@ body {
     box-shadow: 0 5px 0px #8c4c4f;
     cursor: url('ikony/pointer.svg') 16 16, auto;
 }
-.linkpost {
-    text-decoration: none;
-    color: inherit;
-    display: contents;
-}
-.linkpost:hover {
-    cursor: url('ikony/pointer.svg') 16 16, auto;
-}
 .podposty {
     display: grid;
     grid-template-rows: auto auto;
@@ -205,8 +197,42 @@ body {
     border: 5px solid #8c4c4f;
     border-radius: 10px;
     padding: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.stylpost:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 0px #8c4c4f;
+    cursor: url('ikony/pointer.svg') 16 16, auto;
 }
 .stylglowne {
+    display: flex;
+    background-color: white;
+    border: 5px solid #8c4c4f;
+    border-radius: 10px;
+    padding-left: 3%x;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 70%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 240%;
+    position: relative;
+    z-index: 1;
+    line-height: 1.8;
+    overflow: hidden;
+}
+.glowne2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 28%;
+    text-align: center;
+    margin: 2%;
+}
+.stylglowne2 {
     display: flex;
     background-color: white;
     border: 5px solid #8c4c4f;
