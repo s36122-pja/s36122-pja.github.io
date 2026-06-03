@@ -71,7 +71,6 @@ body {
     height: 100%;
     border-bottom: 5px solid #8c4c4f ;
     overflow: hidden;
-    border-bottom: 5px solid #8c4c4f;
 }
 .krewetka {
     display: flex;
@@ -82,7 +81,6 @@ body {
     width: 100%;
     height: 100%;
     border-top: 5px solid #8c4c4f ;
-    border-top: 5px solid #8c4c4f;
     position: relative;
     overflow: hidden;
 }
@@ -167,18 +165,18 @@ body {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .trescpost {
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 20px;
     font-family: "VT323";
-    font-size: 24px;
+    font-size: 210%;
     line-height: 1.6;
 }
 .naglowekpost {
     margin: 0;
     background-color: #ffc2c5;
     color: #6c393c;
-    padding: 15px 20px;
-    font-size: 30px;
+    padding: 3% 5%;
+    font-size: 210%;
     border-bottom: 5px solid #8c4c4f;
     width: 100%;
     box-sizing: border-box;
@@ -186,6 +184,14 @@ body {
 .glownypost:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 0px #8c4c4f;
+    cursor: url('ikony/pointer.svg') 16 16, auto;
+}
+.linkpost {
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+}
+.linkpost:hover {
     cursor: url('ikony/pointer.svg') 16 16, auto;
 }
 .podposty {
@@ -205,16 +211,16 @@ body {
     background-color: white;
     border: 5px solid #8c4c4f;
     border-radius: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-left: 3%x;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     width: 70%;
     height: 40%;
     align-items: center;
     justify-content: center;
     font-weight: 600;
-    font-size: 220%;
+    font-size: 240%;
     position: relative;
     z-index: 1;
     line-height: 1.8;
@@ -233,10 +239,11 @@ body {
 .bombelki li{
     position: absolute;
     list-style: none;
-     width: 40px;
+    width: 40px;
     height: 40px;
     background-color: white;
     bottom: 20px;
+    border-radius: 50%;
     animation: float 4s infinite linear;
 }
 .bombelki li:nth-child(1){
@@ -307,7 +314,7 @@ body {
         border-radius: 100%;
     }
     to{
-        transform: translateY(-1000px);
+        transform: translateY(-105vh);
         opacity: 1;
         border-radius: 100%;
     }
