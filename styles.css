@@ -17,8 +17,8 @@ body {
 .gridcontainer {
     display: grid;
     grid-template-columns: 1fr;
-    height: 100vh;
-    grid-template-rows: 15% 1fr 7% 11%;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto auto;
     box-sizing: border-box;
 }
 .griditem {
@@ -32,7 +32,7 @@ body {
     display: block;    
     height: 12vh;
     width: auto;
-    padding-left: 30px;
+    padding: 9%;
     transition: transform 0.3s ease-in-out;
 }
 .logo:hover {
@@ -79,7 +79,7 @@ body {
     background-color: white;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: 7vh;
     border-top: 5px solid #8c4c4f ;
     position: relative;
     overflow: hidden;
@@ -125,7 +125,7 @@ body {
     font-size: 13px;
     border-top: 5px solid #8c4c4f;
     box-sizing: border-box;
-    padding: 0 40px;
+    padding: 1%;
     position: relative;
     z-index: 10;
 }
@@ -157,7 +157,8 @@ body {
 .glownypost {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 2%;
     background-color: white;
     border: 5px solid #8c4c4f;
     border-radius: 10px;
@@ -165,11 +166,12 @@ body {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .trescpost {
-    margin-top: 2%;
+    margin-top: 0;
     padding: 2%;
     font-family: "VT323";
-    font-size: 210%;
+    font-size: 220%;
     line-height: 1.8;
+    margin-bottom: 3%;
 }
 .naglowekpost {
     margin: 0;
@@ -237,7 +239,7 @@ body {
     font-size: 180%;
     padding: 1.5% 3%;
     line-height: 1.5;
-    margin: 0;
+    margin-top: 1%;
 }
 .podposty {
     display: grid;
@@ -269,8 +271,7 @@ body {
     background-color: white;
     border: 5px solid #8c4c4f;
     border-radius: 10px;
-    padding-left: 3%x;
-    padding-right: 3%;
+    padding: 2% 3%;
     padding-top: 1%;
     padding-bottom: 1%;
     width: 70%;
@@ -284,25 +285,25 @@ body {
     line-height: 1.8;
     overflow: hidden;
 }
+/*rzeczy do edycji stricte tekst.html*/
 .glowne2 {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 28%;
     text-align: center;
-    margin: 2%;
+    margin-top: 2.3%;
+    margin-bottom: -7%;
 }
 .stylglowne2 {
     display: flex;
     background-color: white;
     border: 5px solid #8c4c4f;
     border-radius: 10px;
-    padding-left: 3%x;
-    padding-right: 3%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 2% 3%;
+    padding-bottom: 0;
     width: 70%;
-    height: 40%;
+    height: auto;
     align-items: center;
     justify-content: center;
     font-weight: 600;
@@ -312,6 +313,38 @@ body {
     line-height: 1.8;
     overflow: hidden;
 }
+.box_podstrona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    height: auto !important;
+    margin-bottom: 14% !important;
+}
+.tekstpodstrona {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    box-sizing: border-box;
+}
+.bloktekstu {
+    transform: none !important;
+    box-shadow: none !important;
+    cursor: url('ikony/default.svg') 16 16, auto !important;
+}
+.listatekst {
+    margin-top: 0 !important;
+    padding-left: 3.8%;
+    list-style-type: disc;
+    text-align: left;
+}
+.listatekst li {
+    margin-bottom: 1%;
+    line-height: 2.5;
+}
+/*animacja bombelki*/
 .bombelki {
     position: fixed;
     top: 0;
@@ -403,5 +436,32 @@ body {
         transform: translateY(-105vh);
         opacity: 1;
         border-radius: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .stylglowne2, .tekstpodstrona {
+        width: 90%;
+    }
+    .stylglowne, .glownypost, .podposty{
+        width: 90%;
+    }
+    .naglowekpost {
+        font-size: 150%;
+    }
+    .trescpost {
+        font-size: 140%;
+    }
+    .naglowek {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    .nawigacja {
+        margin: 15px auto 0 auto;
+        padding-right: 0;
+        gap: 10px;
+    }
+    .stylnawigacja {
+        padding: 10px 15px;
+        font-size: 14px;
     }
 }
