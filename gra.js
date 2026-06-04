@@ -10,7 +10,7 @@ let hungerDelay = 0;
 let cleanlinessDelay = 0;
 let sleepDelay = 0;
 
-const MAX_DELAY_TIME = 5;
+const MAX_DELAY_TIME = 7;
 
 //js->html//
 const hungerBar = document.getElementById('hunger-bar');
@@ -163,7 +163,7 @@ loadGameState();
 setInterval(() => {
     if (isAlive && shrimpName !== "") {
         if (isSleeping) {
-            sleep = Math.min(100, sleep + 4);
+            sleep = Math.min(100, sleep + 5);
             if (hungerDelay > 0) hungerDelay--;
             else hunger = Math.max(0, hunger - 0.5);
 
