@@ -13,6 +13,7 @@ body {
     cursor: url('ikony/default.svg') 16 16, auto;
     min-height: 100vh;
     width: 100%;
+    scroll-behavior: smooth;
 }
 .gridcontainer {
     display: grid;
@@ -26,7 +27,6 @@ body {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
-    height: 100%;
 }
 .logo {
     display: block;    
@@ -128,6 +128,7 @@ body {
     padding: 1%;
     position: relative;
     z-index: 10;
+    margin-top: auto;
 }
 .linkstopka {
     color: #6c393c;
@@ -164,10 +165,11 @@ body {
     border: 5px solid #8c4c4f;
     border-radius: 10px;
     overflow: hidden;
+    height: auto;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .trescpost {
-    margin-top: 0;
+    margin-top: 1%;
     padding: 2%;
     font-family: "VT323";
     font-size: 220%;
@@ -294,18 +296,20 @@ body {
     min-height: 28%;
     text-align: center;
     margin-top: 2.3%;
-    margin-bottom: -7%;
+    margin-bottom: 20px;
 }
 .stylglowne2 {
-    display: flex;
+    display: flex !important;
     background-color: white;
     border: 5px solid #8c4c4f;
     border-radius: 10px;
-    padding: 2% 3%;
-    padding-bottom: 0;
-    width: 70%;
+    padding: 1% 2%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 50%;
+    text-align: center !important;
     height: auto;
-    align-items: center;
+    align-items: center !important;
     justify-content: center;
     font-weight: 600;
     font-size: 240%;
@@ -314,36 +318,105 @@ body {
     line-height: 1.8;
     overflow: hidden;
 }
-.box_podstrona {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    width: 100%;
-    height: auto !important;
-    margin-bottom: 14% !important;
-}
-.tekstpodstrona {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 3%;
-    box-sizing: border-box;
-}
-.bloktekstu {
-    transform: none !important;
-    box-shadow: none !important;
-    cursor: url('ikony/default.svg') 16 16, auto !important;
-}
 .listatekst {
-    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    margin-top: -4%;
+    padding-top: 0 !important;
     padding-left: 3.8%;
     list-style-type: disc;
     text-align: left;
 }
 .listatekst li {
     margin-bottom: 1%;
-    line-height: 2.5;
+    line-height: 1.8;
+}
+.zdjecietekst_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.grafikaanatomia {
+    width: 50%;
+    height: auto;
+    display: block;
+    border: 4px solid #8c4c4f;
+    border-radius: 10px;
+}
+.akapittekstu {
+    font-size: 150%;
+    display: block;
+    font-family: "VT323";
+    font-weight: bold;
+}
+.tekstcontainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.tekstitem, .tekststopa {
+    width: 100%;
+    height: auto;
+}
+.tekstpasekkrewetka {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.tekstzawartosc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 70px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+.tekstbox {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid #8c4c4f;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 70%;
+    height: auto;
+    padding-bottom: 1%;
+    box-sizing: border-box;
+}
+.psst {
+    font-family: "VT323";
+    font-size: 200%;
+    color: #b1676c;
+    padding-left: 2%;
+}
+.przyciskgora {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    z-index: 9999;
+    margin-bottom: 200px;
+    transition: transform 0.2s ease;
+    cursor: url('ikony/pointer.svg') 16 16, pointer !important;
+}
+.grafikastrzalka {
+    width: 150px;
+    display: block;
+    image-rendering: pixelated;
+}
+.przycisk-gora:hover {
+    transform: scale(1.15);
+}
+.przycisk-gora:active {
+    transform: scale(1.05) translateY(2px);
 }
 /*animacja bombelki*/
 .bombelki {
@@ -440,7 +513,7 @@ body {
     }
 }
 @media (max-width: 768px) {
-    .stylglowne2, .tekstpodstrona {
+    .stylglowne2, .tekstbox{
         width: 90%;
     }
     .stylglowne, .glownypost, .podposty{
