@@ -835,6 +835,7 @@ body {
 }
 .fiszka-btn:hover { background-color: #ffd8da; }
 #feedback { font-family: 'VT323'; font-size: 1.5rem; text-align: center; margin-top: 10px; }
+
 .fiszka-btn-again {
     display: block;
     width: 60%;

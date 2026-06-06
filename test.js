@@ -52,9 +52,9 @@ function pokazWynik() {
     const obszar = document.getElementById('obszar-fiszki');
     let wiadomosc = "";
     if (punkty === 8) {
-        wiadomosc = "Gratulacje! Jesteś gotowy, aby dbać o krewetkę!";
+        wiadomosc = "Gratulacje! Jesteś gotowy, aby dbać o krewetkę! ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧";
     } else {
-        wiadomosc = "Nie jesteś gotowy, żeby dbać o krewetkę... Musisz jeszcze nad tym popracować!";
+        wiadomosc = "Nie jesteś gotowy, żeby dbać o krewetkę... Musisz jeszcze nad tym popracować! .·°՞(¯□¯)՞°·.";
     }
     obszar.innerHTML = `
                     <div class="test_wiadomosc">
