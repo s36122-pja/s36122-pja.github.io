@@ -512,12 +512,19 @@ body {
         border-radius: 100%;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .stylglowne2, .tekstbox{
         width: 90%;
     }
-    .stylglowne, .glownypost, .podposty{
+    body {
+        font-size: 10px;
+    }
+    .glownypost, .podposty{
         width: 90%;
+    }
+    .stylglowne {
+        width: 90%;
+        font-size: 15px;
     }
     .naglowekpost {
         font-size: 150%;
@@ -540,6 +547,23 @@ body {
     }
 }
 /* GRA KREWETKA */
+.stylnawigacja2 {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: #6c393c;
+    border: 5px solid #8c4c4f;
+    border-radius: 8px;
+    padding: 32px 38px;
+    font-size: 155%;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.stylnawigacja2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 0px #8c4c4f;
+    cursor: url('ikony/pointer.svg') 16 16, auto;
+}
 .box_gra {
     background-color: white;
     border: 5px solid #8c4c4f;
@@ -555,7 +579,7 @@ body {
 .game-title {
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 25px;
     color: #6c393c;
 }
 .game-wrapper {
@@ -605,15 +629,15 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 12px 0;
-    font-size: 200%;
+    font-size: 230%;
     font-family: "VT323";
     font-weight: bold;
 }
 .game-progress-bar {
     width: 60%;
-    height: 20px;
+    height: 25px;
     background-color: #ffc2c5;
-    border: 3px solid #8c4c4f;
+    border: 4px solid #8c4c4f;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -644,8 +668,8 @@ body {
     transform: scale(1.15);
 }
 .item-graphic-img {
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     image-rendering: pixelated;
     display: block;
